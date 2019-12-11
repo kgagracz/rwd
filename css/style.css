@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-image: url("../man-1.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;   
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+@media all and (max-width: 1170px) {
+    .container {
+        background-image: url("../man-2.jpg");
+        background-size: cover;
+        height: 100vh;
+        display: flex;   
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        background-image: url("../man-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
+        display: flex;   
+        justify-content: center;
+    }
+
+    .text-container {
+        margin-top: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1,
+    h2 {
+        color: black;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+}
