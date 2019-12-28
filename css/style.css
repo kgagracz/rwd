@@ -41,7 +41,7 @@ h2 {
     .container {
         background-image: url("../man-2.jpg");
         background-size: cover;
-        height: 100vh;
+        height: 70vh;
         display: flex;   
         justify-content: flex-end;
         align-items: flex-start;
